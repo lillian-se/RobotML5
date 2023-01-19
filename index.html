@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RobotML5</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.5/dist/mindar-image-three.prod.js" ></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/three.min.js"></script> -->
+
+    <style>
+      html,
+      body {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      img {
+        position: absolute;
+        max-width: 100%;
+      }
+      .webgl {
+        position: absolute;
+      }
+      #canvas2 {
+        position: relative;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img id = "komtekLogo" src="./assets/textures/komtekLogoVit.svg"> -->
+
+    <canvas class="webgl"></canvas>
+    <canvas id="canvas2" width="480" height="360"></canvas>
+    <video
+      id="video"
+      width="640"
+      height="480"
+      autoplay
+      style="display: none"
+    ></video>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
